@@ -1,0 +1,64 @@
+body {
+    background-color:aquamarine;
+    font-family: 'times new roman', Verdana, Geneva, sans-serif;
+}
+
+#header {
+    color:chocolate;
+    text-align: center;
+}
+
+.gambar {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.isi {
+    text-align: justify;
+    width: fit-content;
+}
+
+#profil {
+    text-align: justify;
+    width: fit-content;
+}
+
+#beternak {
+    text-align: justify;
+    width: fit-content;
+}
+
+.koleksi {
+    text-align: center;
+    background-color: coral;
+}
+
+.koleksi img {
+    width: 20%;
+}
+
+.promo {
+    text-align: center;
+    font-weight: bold;
+    color:black; 
+    display: block;
+    margin: 0 auto;
+}
+
+.promo h3 {
+    background-color:coral;
+    border: 5px dotted maroon;
+    text-align: center;
+    font-weight: bold;
+    color:black; 
+    display: block;
+    margin: 0 auto;
+}
+
+.link {
+    text-align: center;
+    color: aquamarine;
+}
+
+    
+    
