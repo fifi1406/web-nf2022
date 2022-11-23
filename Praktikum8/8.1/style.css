@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color:khaki;
+    display: flex; 
+    padding: 0.5em 1rem;
+    justify-content: space-between;
+}
+
+header img {
+    width: 4rem;
+
+}
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+    
