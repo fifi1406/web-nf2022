@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 8.4</title>
+    <style>
+        #container {
+            background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 1em;
+
+        }
+
+        .header {
+            background-color:chocolate;
+            height: 100px;
+            text-align: center;
+            margin: 1em;
+            padding: 1rem;
+        }
+
+        .main {
+                display: flex;
+                height: 500px;
+                justify-content: space-between;
+        }
+
+        .aside {
+                background-color: darkkhaki;
+                width: 100%;
+                text-align: center;
+                margin: 1em;
+                padding: 0.5rem 1rem;
+        }
+
+        .span {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+        }
+
+        .article {
+                background-color:palevioletred;
+                display: flex;
+                width: 85%;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin: 1em;
+        }
+
+        .foto {
+                display: flex;
+                justify-content: center;
+        }
+
+        .foto img {
+                width: 150px;
+                height: 150px;
+                margin: 3em;
+        }
+
+        h1 {
+            justify-content: center;
+        }
+
+        .footer {
+                background-color:burlywood;
+                height: 100px;
+                text-align: center;
+                margin: 1em;
+                padding: 1rem;
+        }
+
+    </style>
+</head>
+<body  id="container">
+    <div>    
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="main">
+         <div class="aside">
+            <span class="span">
+            <h1>Aside</h1>
+            </span>
+         </div>
+
+         <div class="article">
+            <h1>Article</h1>
+         <div class="foto">
+            <img src="agustd.jfif" alt="">
+            <img src="suga.jfif" alt="">
+            <img src="minyoongi.jfif" alt="">
+        </div>
+     </div>
+    </div>
+
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
