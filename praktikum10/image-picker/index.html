@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        body {
+            background-color: cornflowerblue;
+            margin: 1em;
+        }
+        fieldset {
+            background-color:aquamarine;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        .container {
+            display: flex;
+            margin: 50px 350px;
+            width: 500px;
+            height: 350px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            width: 550px;
+            height: 350px;
+        }
+    </style>
+
+    <script>
+        function dekor1() {
+            dekor_1 = document.getElementById("home");
+            dekor_1.style.color = "greenyellow";
+        }
+
+        function dekor2() {
+            dekor_2 = document.getElementById("home");
+            dekor_2.style.color = "chocolate";
+        }
+        
+        function imagepicker() {
+            const list_image = ["Bibimbap.jpg", "Bulgogi.jpg", "Kimbab.jpg", "corndog.jpeg", "Rabokki.jpeg", "Tteokbokki.jpg", "Kimchi.jpg", "Ramyeon.jpg"]
+            let pilihan = document.getElementById("option");
+            if(pilihan.value == "Bibimbap") {
+                let select = list_image[0];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Bibimbap.jpg")
+            }
+            
+
+            if(pilihan.value == "Bulgogi") {
+                let select = list_image[1];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Bulgogi.jpg")
+            }
+
+            if(pilihan.value == "Kimbab") {
+                let select = list_image[2];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Kimbab.jpg")
+            }
+
+            if(pilihan.value == "corndog") {
+                let select = list_image[3];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar corndog.jpeg")
+            }
+
+            if(pilihan.value == "Rabokki") {
+                let select = list_image[4];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Rabokki.jpeg")
+            }
+
+            if(pilihan.value == "Tteokbokki") {
+                let select = list_image[5];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Tteokbokki.jpg")
+            }
+
+            if(pilihan.value == "Kimchi") {
+                let select = list_image[6];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Kimchi.jpg")
+            }
+
+            if(pilihan.value == "Ramyeon") {
+                let select = list_image[7];
+                document.getElementById("image").src = `images/${select}`
+                alert("Ini gambar Ramyeon.jpg")
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+    <a href="" onmouseover="dekor1()" onmouseout="dekor2()" id="home"><h1>Welcome to Fifi Image Picker</h1></a>
+    <hr>
+    <br>
+    
+    <select id="option" onchange="imagepicker()">
+        <option value="" selected>Pilih Menu Makanan Korea</option>
+        <option value="Bibimbap">Bibimbap</option>
+        <option value="Bulgogi">Bulgogi</option>
+        <option value="Kimbab">Kimbab</option>
+        <option value="corndog">corndog</option>
+        <option value="Rabokki">Rabokki</option>
+        <option value="Tteokbokki">Tteokbokki</option>
+        <option value="Kimchi">Kimchi</option>
+        <option value="ramyeon">ramyeon</option>
+    </select>
+    
+    <br>
+    <div class="container" id="container">
+        <div class="box" id="box">
+            <img id="image">
+        </div>
+    </div>
+    </fieldset>
+
+</body>
+</html>
